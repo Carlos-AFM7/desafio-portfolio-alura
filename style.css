@@ -1,0 +1,391 @@
+:root {
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-fundo-menu: #ffffff;
+    --cor-do-texto: #464646;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    height: 100%;
+    line-height: 1.6;
+    color: var(--cor-do-texto);
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-do-texto);
+}
+
+/* ------------------------------ Seção Menu -------------------------------*/
+.cabecalho {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: var(--cor-de-fundo-menu);
+}
+
+.cabecalho__logo {
+    padding: 1rem;
+}
+
+.cabecalho__titulo {
+    font-size: 1.5rem;
+    padding-right: 15rem;
+}
+
+.navegacao__lista {
+    display: flex;
+    gap: 2rem;
+    padding-left: 16rem;
+}
+
+.navegacao__elemento a {
+    font-size: 1rem;
+}
+
+/* ------------------------------ Seção Apresentação ------------------------------*/
+
+.apresentacao {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem;
+    gap: 5rem;
+}
+
+.apresentacao__conteiner {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.apresentacao__titulo {
+    font-weight: 700;
+    font-size: 3.25rem;
+}
+
+.apresentacao__subtitulo {
+    font-size: 1.375rem;
+    font-weight: 400;
+}
+
+.redes {
+    display: flex;
+    gap: 2rem;
+}
+
+/* ------------------------------ Seção Sobre mim ----------------------------------*/
+
+.sobre-mim {
+    display: flex;
+    flex-direction: column;
+    background-color: #EAF2FD;
+    padding: 4rem;
+    gap: 1rem;
+}
+
+.sobre-mim__titulo {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.sobre-mim__texto {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/*------------------------------ Seção de Habilidades ------------------------------*/
+
+.habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5rem;
+    gap: 5rem;
+}
+
+.habilidades__titulo {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.habilidades__lista {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.habilidades__elemento {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    background-color: var(--cor-de-fundo-menu);
+    padding: 1.5rem;
+    gap: 0.5rem;
+    width: 136px;
+    height: 134px;
+}
+
+/*------------------------------ Seção de Hobbies --------------------------------*/
+
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5rem;
+    margin-bottom: 5rem;
+    gap: 5rem;
+}
+
+.hobbies__titulo {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.hobbies__lista {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.hobbies__elemento {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    background-color: var(--cor-de-fundo-menu);
+    padding: 1.5rem;
+    gap: 0.5rem;
+    width: 136px;
+    height: 134px;
+}
+
+/*------------------------------ Seção de Formação --------------------------------*/
+
+.formacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #EAF2FD;
+    padding: 5rem;
+    gap: 2rem;
+}
+
+.formacao__titulo {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.formacao__lista {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.formacao__elemento {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    background-color: var(--cor-de-fundo-menu);
+    padding: 1.5rem;
+    gap: 0.5rem;
+}
+
+/*------------------------------ Seção de Projeto ---------------------------------*/
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    padding: 5rem;
+}
+
+.projetos__conteiner {
+    display: flex;
+    align-items: center;
+    gap: 1.625rem;
+}
+
+.projetos__conteiner--invertido {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 1.625rem;
+}
+
+.projetos__titulo {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.projetos__conteudo__escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.projetos__nome {
+    font-size: 1.375rem;
+    font-weight: 700;
+}
+
+.projetos__descricao {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.projetos__btns {
+    display: flex;
+    gap: 1rem;
+}
+
+.projetos__btn--repositorio {
+    color: #2A7AE4;
+    border: solid 1px #2A7AE4;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1rem;
+    gap: 0.625rem;
+}
+
+.projetos__btn--demo {
+    background-color: #2A7AE4;
+    color: var(--cor-de-fundo-menu);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1rem;
+    gap: 0.625rem;
+}
+
+/*------------------------------ Seção de Contato ---------------------------------*/
+
+.contato {
+    display: flex;
+    align-items: center;
+    background-color: #EAF2FD; 
+    padding: 5rem;
+    gap: 2rem;
+}
+
+.contato__conteudo__escrito {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato__titulo {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.contato__subtitulo {
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 2rem;
+}
+
+.contato__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contato__campo {
+    outline: none;
+    border: none;
+    background-color: var(--cor-de-fundo-menu);
+    color: #464646;
+    font-weight: 400;
+    padding: 1rem;
+    width: 656px;
+    height: 36px;
+    border-radius: 4px;
+}
+
+.contato__campo-contato__campo--textarea {
+    outline: none;
+    border: none;
+    resize: none;
+    background-color: var(--cor-de-fundo-menu);
+    color: #464646;
+    font-family: Relaway, sans-serif;
+    padding: 1rem;
+    height: 133px;
+    border-radius: 4px;
+}
+
+.contato__botao {
+    background-color: #2A7AE4;
+    border: none;
+    color: var(--cor-de-fundo-menu);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1rem;
+    gap: 0.625rem;
+}
+
+/* ------------------------------ Responsividade -----------------------------------*/
+
+.rodape {
+    background-color: var(--cor-de-fundo-menu);
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.rodape__texto {
+    font-size: 1rem;
+}
+
+/* ------------------------------ Responsividade -----------------------------------*/
+
+/* Tablets e telas maiores */
+/* @media (min-width: 768px) {
+    .cabecalho {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecalho__logo {
+        max-width: 100px;
+    }
+
+    .cabecalho__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacao__lista {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1rem;
+    }
+} */
+
+/* Telas grandes */
+/* @media (min-width: 1024px) { */
+    /* Aqui você pode ajustar ainda mais o design para telas grandes */
+    /* .cabecalho__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1.1rem;
+    }
+} */
